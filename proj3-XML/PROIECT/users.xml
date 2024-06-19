@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE users SYSTEM "users.dtd">
+<users xmlns:math="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <user>
+        <id>2</id>
+        <nume>ioana</nume>
+        <parola>ioana2</parola>
+        <email>ioana_popa@gmail.com</email>
+        <math:math>
+            <math:mi>x</math:mi>
+            <math:mo>=</math:mo>
+            <math:mi>a</math:mi>
+            <math:mo>+</math:mo>
+            <math:mn>2</math:mn>
+           
+        </math:math>
+        <svg:svg width="100" height="100">
+            <svg:image xlink:href="images/cerc.svg" width="100" height="100"/>
+        </svg:svg>
+    </user>
+    <user>
+        <id>3</id>
+        <nume>bianca</nume>
+        <parola>bianca2</parola>
+        <email>bianca.pop@yahoo.com</email>
+        <svg:svg width="100" height="100">
+            <svg:image xlink:href="images/example.svg" width="100" height="100"/>
+        </svg:svg>
+    </user>
+    <user>
+        <id>4</id>
+        <nume>maria</nume>
+        <parola>maria2</parola>
+        <email>maria_popa@yahoo.com</email>
+    </user>
+    <user>
+        <id>6652154a78b04</id>
+        <nume>alex</nume>
+        <parola>$2y$10$DRIqKg3xyTxSCkzhBv6VnuJB5wYnaclFKTHqhxgAjhKlQ4/gDJH1C</parola>
+        <email>alex.alex@yahoo.com</email>
+    </user>
+    <user>
+        <id>665229e110c80</id>
+        <nume>mihai</nume>
+        <parola>$2y$10$QdkXE6bNWIZQz92z0xKhCu./GKn29u/Le4RjZGCxl8rXVKCMGHCb6</parola>
+        <email>mihai@mihai.com</email>
+    </user>
+</users>

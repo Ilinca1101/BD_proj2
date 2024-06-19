@@ -1,0 +1,75 @@
+<!ELEMENT users (user+)>
+<!ATTLIST users
+    xmlns:math CDATA #FIXED "http://www.w3.org/1998/Math/MathML"
+    xmlns:svg CDATA #FIXED "http://www.w3.org/2000/svg"
+    xmlns:xlink CDATA #FIXED "http://www.w3.org/1999/xlink">
+
+<!ELEMENT user (id, nume, parola, email, math:math?, svg:svg?)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT nume (#PCDATA)>
+<!ELEMENT parola (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT math:math (math:mi | math:mo | math:msup | math:mn | math:mrow | math:msup | math:mo)*>
+<!ELEMENT math:mi (#PCDATA)>
+<!ELEMENT math:mo (#PCDATA)>
+<!ELEMENT math:msup (math:mrow, math:mn)>
+<!ELEMENT math:mn (#PCDATA)>
+<!ELEMENT math:mrow (math:mi | math:mo | math:mn)*>
+<!ELEMENT svg:svg (svg:circle | svg:path | svg:rect | svg:line | svg:polygon | svg:polyline | svg:ellipse | svg:text | svg:image)*>
+<!ATTLIST svg:svg width CDATA #REQUIRED
+                 height CDATA #REQUIRED>
+<!ELEMENT svg:circle EMPTY>
+<!ATTLIST svg:circle cx CDATA #REQUIRED
+                     cy CDATA #REQUIRED
+                     r CDATA #REQUIRED
+                     stroke CDATA #REQUIRED
+                     stroke-width CDATA #REQUIRED
+                     fill CDATA #REQUIRED>
+<!ELEMENT svg:path EMPTY>
+<!ATTLIST svg:path d CDATA #REQUIRED
+                   fill CDATA #REQUIRED>
+<!ELEMENT svg:rect EMPTY>
+<!ATTLIST svg:rect x CDATA #IMPLIED
+                  y CDATA #IMPLIED
+                  width CDATA #REQUIRED
+                  height CDATA #REQUIRED
+                  fill CDATA #IMPLIED
+                  stroke CDATA #IMPLIED
+                  stroke-width CDATA #IMPLIED>
+<!ELEMENT svg:line EMPTY>
+<!ATTLIST svg:line x1 CDATA #REQUIRED
+                  y1 CDATA #REQUIRED
+                  x2 CDATA #REQUIRED
+                  y2 CDATA #REQUIRED
+                  stroke CDATA #REQUIRED
+                  stroke-width CDATA #IMPLIED>
+<!ELEMENT svg:polygon EMPTY>
+<!ATTLIST svg:polygon points CDATA #REQUIRED
+                      fill CDATA #IMPLIED
+                      stroke CDATA #IMPLIED
+                      stroke-width CDATA #IMPLIED>
+<!ELEMENT svg:polyline EMPTY>
+<!ATTLIST svg:polyline points CDATA #REQUIRED
+                       fill CDATA #IMPLIED
+                       stroke CDATA #IMPLIED
+                       stroke-width CDATA #IMPLIED>
+<!ELEMENT svg:ellipse EMPTY>
+<!ATTLIST svg:ellipse cx CDATA #REQUIRED
+                      cy CDATA #REQUIRED
+                      rx CDATA #REQUIRED
+                      ry CDATA #REQUIRED
+                      fill CDATA #IMPLIED
+                      stroke CDATA #IMPLIED
+                      stroke-width CDATA #IMPLIED>
+<!ELEMENT svg:text (#PCDATA)>
+<!ATTLIST svg:text x CDATA #IMPLIED
+                   y CDATA #IMPLIED
+                   fill CDATA #IMPLIED
+                   font-family CDATA #IMPLIED
+                   font-size CDATA #IMPLIED>
+<!ELEMENT svg:image EMPTY>
+<!ATTLIST svg:image xlink:href CDATA #REQUIRED
+                    x CDATA #IMPLIED
+                    y CDATA #IMPLIED
+                    width CDATA #REQUIRED
+                    height CDATA #REQUIRED>

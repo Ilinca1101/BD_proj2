@@ -1,0 +1,5 @@
+<!ELEMENT images (image+)>
+<!ELEMENT image (id, title, path)>
+<!ELEMENT id (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT path (#PCDATA)>
